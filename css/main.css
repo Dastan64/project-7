@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: auto;
+  background: url("../images/header-bg.png") no-repeat center center/cover;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header__number {
+  text-align: right;
+  margin-top: 20px;
+}
+.header .number {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+.header .link {
+  color: #ac1b32;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.header__caption {
+  margin-top: 120px;
+  color: #fff;
+  text-align: center;
+}
+.header__caption h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.header__caption p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: -20px;
+  letter-spacing: 1px;
+}
+.header__icons {
+  margin: 115px auto 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.header__icons .icon {
+  text-align: center;
+  color: #fff;
+}
+.header__icons p {
+  font-size: 1.125rem;
+  margin-top: 20px;
+  width: 13vw;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.header__applications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: 100px auto 0;
+  padding-bottom: 80px;
+}
+.header .application {
+  text-align: center;
+}
+.header .application p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #fff;
+  margin: 20px auto 0;
+  width: 13vw;
+  line-height: 20px;
+}
+.header .btn {
+  width: 20vw;
+  outline: none;
+  text-align: center;
+  border-radius: 25px;
+  padding: 15px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.125rem;
+}
+.header .fast {
+  background-color: #d91233;
+  color: #fff;
+}
+.header .detailed {
+  background-color: transparent;
+  border: 2px solid #d91233;
+  color: #fff;
+}
+
+.features__first {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.features__second {
+  margin: 80px auto 0;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.features .feature {
+  text-align: center;
+}
+.features .feature h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.features .feature p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  width: 20vw;
+  margin: 20px auto;
+}
+
+/*# sourceMappingURL=main.css.map */
