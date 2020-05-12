@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+.iti__flag {
+    background-image: url("../images/flags.png");
+}
+@mixin MontserratRegular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+@mixin MontserratBold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
 @mixin LatoRegular {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -25,12 +36,12 @@
     }
     .number {
         color: #fff;
-        @include LatoBold();
+        @include MontserratBold();
         font-size: 28px;
     }
     .link {
         color: #ac1b32;
-        @include LatoRegular();
+        @include MontserratRegular();
         font-size: 1rem;
     }
     &__caption {
@@ -38,12 +49,12 @@
         color: #fff;
         text-align: center;
         h1 {
-            @include LatoBold();
+            @include MontserratBold();
             font-size: 2.5rem;
             text-transform: uppercase;
         }
         p {
-            @include LatoRegular();
+            @include MontserratRegular();
             font-size: 1.5rem;
             margin-top: -20px;
             letter-spacing: 1px;
@@ -64,7 +75,7 @@
             font-size: 1.125rem;
             margin-top: 20px;
             width: 13vw;
-            @include LatoRegular();
+            @include MontserratRegular();
         }
     }
     &__applications {
@@ -78,7 +89,7 @@
     .application {
         text-align: center;
         p {
-            @include LatoRegular();
+            @include MontserratRegular();
             font-size: 0.875rem;
             color: #fff;
             margin: 20px auto 0;
@@ -93,7 +104,7 @@
         border-radius: 25px;
         padding: 15px;
         border: none;
-        @include LatoBold();
+        @include MontserratBold();
         cursor: pointer;
         font-size: 1.125rem;
     }
@@ -122,13 +133,244 @@
     .feature {
         text-align: center;
         h3 {
-            @include LatoBold();
+            @include MontserratBold();
             margin-top: 30px;
         }
         p {
-            @include LatoRegular();
+            @include MontserratRegular();
             width: 20vw;
             margin: 20px auto;
         }
+    }
+}
+.form {
+    padding-bottom: 20px;
+    height: auto;
+    background-color: #ebebeb;
+    &__heading {
+        text-align: center;
+        padding-top: 40px;
+        h1 {
+            @include MontserratBold();
+        }
+        p {
+            @include MontserratRegular();
+        }
+    }
+    &__container {
+        border: 5px solid #fff;
+        width: 90%;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        height: 340px;
+        margin: 60px auto 20px;
+    }
+    select {
+        width: 250px;
+        border: none;
+        @include MontserratRegular();
+        padding: 10px;
+    }
+    label {
+        @include MontserratBold();
+    }
+    textarea {
+        padding: 10px 0 0 10px;
+        @include MontserratRegular();
+        width: 240px;
+        height: 120px;
+        &::-webkit-input-placeholder {
+            @include MontserratRegular();
+            padding-left: 10px;
+        }
+    }
+    input {
+        padding: 10px;
+        outline: none;
+        @include MontserratRegular();
+        border: none;
+        &::-webkit-input-placeholder {
+            @include MontserratRegular();
+            padding-left: 10px;
+        }
+    }
+    &__select, &__details, &__info {
+        display: flex;
+        height: 80%;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    &__btn {
+        text-align: center;
+        @include MontserratBold();
+        color: #fff;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 25px;
+        border: none;
+        width: 20vw;
+        background-color: #d91233;
+    }
+}
+.autos {
+    &__heading {
+        margin-top: 40px;
+        text-align: center;
+        @include MontserratBold();
+    }
+    &__first, &__second, &__third {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__first {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    &__second, &__third {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    &__third {
+        margin-bottom: 20px;
+    }
+}
+.reviews {
+    height: auto;
+    background-color: #ebebeb;
+    &__heading {
+        text-align: center;
+        @include MontserratBold();
+        padding-top: 40px;
+    }
+    &__grid {
+        width: 90%;
+        margin: 0 auto;
+        height: 400px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+    .review {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .name {
+        color: #858585;
+        font-size: 0.75rem;
+        @include MontserratBold();
+    }
+    .text {
+        color: #2b2b2b;
+        margin-top: 5px;
+        @include MontserratRegular();
+    }
+    .descr {
+        margin-left: 15px;
+        h3 {
+            @include MontserratBold();
+            color: #d91233;
+            margin-top: 5px;
+        }
+    }
+}
+.consultation {
+    padding-bottom: 40px;
+    background-color: #dbdbdb;
+    &__heading {
+        padding-top: 40px;
+        text-align: center;
+        h1 {
+            @include MontserratBold();
+        }
+        p {
+            @include MontserratRegular();
+        }
+    }
+    &__request {
+        width: 60%;
+        height: 280px;
+        border: 5px solid #fff;
+        margin: 40px auto 0;
+    }
+    .request-layer {
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    label {
+        @include MontserratRegular();
+    }
+    input {
+        margin-top: 10px;
+        padding: 10px;
+        outline: none;
+        @include MontserratRegular();
+        border: none;
+    }
+    .name, .email {
+        display: flex;
+        flex-direction: column;
+    }
+    &__btn {
+        @extend .form__btn;
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+.contacts {
+    padding-bottom: 40px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbdbdb;
+    position: relative;
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 480px;
+        height: 290px;
+        background-color: #d91233;
+    }
+    .info-layer {
+        color: #fff;
+        display: flex;
+        height: 70%;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        @include MontserratRegular();
+    }
+    .heading, .number {
+        @include MontserratBold();
+    }
+    .mail {
+        text-decoration: underline;
+    }
+}
+.footer {
+    &__phone {
+        padding: 40px 0 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .number {
+        color: #000;
+        @include MontserratBold();
+        font-size: 28px;
+    }
+    .link {
+        color: #ac1b32;
+        @include MontserratRegular();
+        font-size: 1rem;
     }
 }

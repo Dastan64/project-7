@@ -34,7 +34,7 @@
 }
 /*********************************************/
 
-/*******************HEADER SECTION************/
+/*******************FEATURES SECTION**********/
 @media screen and (min-width: 320px) and (max-width: 900px) {
     .features__first, .features__second {
         flex-direction: column;
@@ -50,5 +50,98 @@
     }
     .features .feature p {
         width: 90%;
+    }
+}
+/*********************************************/
+
+/*******************FORM SECTION**************/
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    .form__heading {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .form__container {
+        flex-direction: column;
+        height: 800px;
+    }
+    .form__btn {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .form__select, .form__details, .form__info {
+        height: 100%;
+    }
+    .field select, .field textarea, .field input {
+        width: 80vw;
+    }
+}
+/*********************************************/
+
+/*******************AUTOS SECTION*************/
+@media screen and (min-width: 320px) and (max-width: 709px) {
+    .autos__heading {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .autos__first, .autos__second, .autos__third {
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        align-items: center;
+    }
+    .autos__second, .autos__third {
+        margin-top: 0;
+    }
+}
+/*********************************************/
+
+/*******************REVIEWS SECTION***********/
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    .reviews__grid {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .reviews .review {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .reviews .descr {
+        margin-left: 0;
+    }
+}
+/*********************************************/
+
+/*******************CONSULTATION SECTION******/
+@media screen and (min-width: 320px) and (max-width: 870px) {
+    .consultation__heading {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .consultation__request {
+        width: 90%;
+    }
+    .consultation .name, .consultation .email {
+        text-align: center;
+        width: 100%;
+    }
+    .consultation input {
+        margin: 10px auto;
+    }
+    .consultation .request-layer {
+        flex-direction: column;
+    }
+    .consultation__btn {
+        width: 60%;
+    }
+}
+/*********************************************/
+
+/*******************CONTACTS SECTION**********/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .contacts__info {
+        width: 80vw;
     }
 }
